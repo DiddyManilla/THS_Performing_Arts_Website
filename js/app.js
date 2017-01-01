@@ -1,10 +1,11 @@
-angular.module('dramaApp', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
+var app = angular.module('dramaApp', ['ui.router']);
+app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $urlRouterProvider) {
 
 	$stateProvider
-		.state('home'), {
+		.state('home', {
 			url:'/',
 			templateUrl: './views/home.html'
-		}
+		})
 		.state('drama', {
 			url:'/drama',
 			templateUrl:'./views/drama.html',
@@ -16,6 +17,7 @@ angular.module('dramaApp', ['ui.router']).config(function($stateProvider, $urlRo
 			controller: 'choirCtrl'
 		});		
 
-		//TODO: add state for band and orchestra
-			//Remember to creat controllers for those routes
-}).run();
+		//TODO: add routes for Orchestra, Band, and the League of Assassins
+			//Don't forget to build their relatec controllers!
+
+}]).run();
