@@ -19,7 +19,13 @@ p {
 }
 
 main {
-	margin-top: 12vh;
+	margin-top: 15vh;
+	padding-bottom: 3vh;
+	position: absolute;
+	background-color: rgba(120,120,120,.80);
+	width: 50%;
+	transform: translate(50%,0);
+	border-radius: 30px;
 }
 
 header {
